@@ -12,6 +12,8 @@
 		2823BEC11E329AC70011B5D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2823BEBF1E329AC70011B5D5 /* Main.storyboard */; };
 		2823BEC31E329AC70011B5D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2823BEC21E329AC70011B5D5 /* Assets.xcassets */; };
 		2823BEC61E329AC70011B5D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2823BEC41E329AC70011B5D5 /* LaunchScreen.storyboard */; };
+		2823BED11E32D2920011B5D5 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2823BED01E32D2920011B5D5 /* BorderedButton.swift */; };
+		2823BED51E32D7E10011B5D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2823BED41E32D7E10011B5D5 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2823BEC21E329AC70011B5D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2823BEC51E329AC70011B5D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2823BEC71E329AC70011B5D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2823BED01E32D2920011B5D5 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
+		2823BED41E32D7E10011B5D5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		2823BECE1E329D4E0011B5D5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2823BED01E32D2920011B5D5 /* BorderedButton.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -84,6 +89,7 @@
 		2823BECF1E329D530011B5D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2823BED41E32D7E10011B5D5 /* Constants.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -163,6 +169,8 @@
 			files = (
 				2823BEBE1E329AC70011B5D5 /* LoginVC.swift in Sources */,
 				2823BEBC1E329AC70011B5D5 /* AppDelegate.swift in Sources */,
+				2823BED11E32D2920011B5D5 /* BorderedButton.swift in Sources */,
+				2823BED51E32D7E10011B5D5 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
