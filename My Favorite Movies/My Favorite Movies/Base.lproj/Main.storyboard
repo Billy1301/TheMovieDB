@@ -120,7 +120,7 @@
         <scene sceneID="W4k-KG-Fjb">
             <objects>
                 <navigationController id="ZH5-nD-V5E" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Sci-Fi" image="Genre Icon" id="tqr-v1-ADQ"/>
+                    <tabBarItem key="tabBarItem" title="Sci-Fi" image="Genre Icon" selectedImage="Genre Icon" id="tqr-v1-ADQ"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="r3l-T1-JeK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -136,17 +136,17 @@
         <!--Sci-Fi-->
         <scene sceneID="GME-JQ-ja9">
             <objects>
-                <tableViewController storyboardIdentifier="GenreTableViewController3" id="feD-EW-Oc4" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="GenreTableViewController3" id="feD-EW-Oc4" customClass="GenreTableViewController" customModule="My_Favorite_Movies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" id="mjc-KT-3xd">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" rowHeight="71" id="SDR-WE-vSr">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieTableViewCell" rowHeight="71" id="SDR-WE-vSr">
                                 <rect key="frame" x="0.0" y="28" width="414" height="71"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SDR-WE-vSr" id="uf2-Qm-Pnj">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -202,51 +202,56 @@
                                 <rect key="frame" x="4" y="20" width="406" height="403"/>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="JEI-72-MDL">
-                                <rect key="frame" x="197.33333333333334" y="212" width="20" height="20"/>
+                                <rect key="frame" x="197" y="212" width="20" height="20"/>
                             </activityIndicatorView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Movie details" translatesAutoresizingMaskIntoConstraints="NO" id="TTu-PD-tBK">
-                                <rect key="frame" x="8" y="485" width="398" height="243"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Movie details" translatesAutoresizingMaskIntoConstraints="NO" id="TTu-PD-tBK">
+                                <rect key="frame" x="8" y="468" width="398" height="260"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlH-kH-wFr">
-                                <rect key="frame" x="8" y="440" width="398" height="37"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="RGG-Me-g6i">
+                                <rect key="frame" x="8" y="440" width="398" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KlH-kH-wFr">
+                                        <rect key="frame" x="0.0" y="5" width="373" height="20"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuY-E9-P8N">
+                                        <rect key="frame" x="373" y="2.3333333333333144" width="25" height="25.333333333333371"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="Bcu-yo-nHl"/>
+                                            <constraint firstAttribute="width" constant="25" id="xBP-Lh-Ga2"/>
+                                        </constraints>
+                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="Heart Icon"/>
+                                        <connections>
+                                            <action selector="toggleFavorite:" destination="i9d-4f-9Gf" eventType="touchUpInside" id="XYk-bd-b2J"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="Q0e-Oe-7Qz"/>
+                                    <constraint firstAttribute="height" constant="30" id="gCW-GV-zF2"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yuY-E9-P8N">
-                                <rect key="frame" x="361" y="420" width="53" height="32"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="36b-Vt-ZhB"/>
-                                    <constraint firstAttribute="width" constant="53" id="8Ks-4U-9xf"/>
-                                </constraints>
-                                <state key="normal" image="Favorite Icon"/>
-                            </button>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="KlH-kH-wFr" firstAttribute="top" secondItem="FBc-FD-EkX" secondAttribute="bottom" constant="17" id="0j4-m3-WIz"/>
                             <constraint firstItem="FBc-FD-EkX" firstAttribute="top" secondItem="YsE-dR-Cft" secondAttribute="bottom" id="2sT-JC-ja6"/>
                             <constraint firstItem="JEI-72-MDL" firstAttribute="top" secondItem="YsE-dR-Cft" secondAttribute="bottom" constant="192" id="83m-5K-Kl7"/>
-                            <constraint firstItem="KlH-kH-wFr" firstAttribute="leading" secondItem="5Ka-Ih-Ub5" secondAttribute="leading" constant="8" id="EdV-Hd-N1j"/>
-                            <constraint firstItem="yuY-E9-P8N" firstAttribute="top" secondItem="YsE-dR-Cft" secondAttribute="bottom" constant="400" id="H59-dt-hkM"/>
+                            <constraint firstAttribute="trailing" secondItem="RGG-Me-g6i" secondAttribute="trailing" constant="8" id="CI7-jD-zq9"/>
                             <constraint firstAttribute="trailing" secondItem="FBc-FD-EkX" secondAttribute="trailing" constant="4" id="Ky7-kL-BsD"/>
+                            <constraint firstItem="RGG-Me-g6i" firstAttribute="top" secondItem="FBc-FD-EkX" secondAttribute="bottom" constant="17" id="MJz-Go-g2Y"/>
                             <constraint firstItem="FBc-FD-EkX" firstAttribute="leading" secondItem="5Ka-Ih-Ub5" secondAttribute="leading" constant="4" id="MK8-C5-xG6"/>
-                            <constraint firstAttribute="trailing" secondItem="KlH-kH-wFr" secondAttribute="trailing" constant="8" id="Mcy-yC-VOr"/>
+                            <constraint firstItem="TTu-PD-tBK" firstAttribute="top" secondItem="FBc-FD-EkX" secondAttribute="bottom" constant="45" id="NYs-it-e9y"/>
                             <constraint firstItem="TTu-PD-tBK" firstAttribute="leading" secondItem="5Ka-Ih-Ub5" secondAttribute="leading" constant="8" id="Nvm-jv-DZx"/>
+                            <constraint firstItem="RGG-Me-g6i" firstAttribute="leading" secondItem="5Ka-Ih-Ub5" secondAttribute="leading" constant="8" id="Ofe-Vy-gqb"/>
+                            <constraint firstItem="TTu-PD-tBK" firstAttribute="centerX" secondItem="JEI-72-MDL" secondAttribute="centerX" id="SWP-lr-ETs"/>
                             <constraint firstItem="xxU-4Q-mTM" firstAttribute="top" secondItem="TTu-PD-tBK" secondAttribute="bottom" constant="8" id="TbD-GG-dbi"/>
                             <constraint firstItem="FBc-FD-EkX" firstAttribute="centerY" secondItem="JEI-72-MDL" secondAttribute="centerY" id="Vpd-7b-9qW"/>
-                            <constraint firstItem="KlH-kH-wFr" firstAttribute="centerX" secondItem="JEI-72-MDL" secondAttribute="centerX" id="dyH-7x-FZq"/>
-                            <constraint firstItem="TTu-PD-tBK" firstAttribute="top" secondItem="KlH-kH-wFr" secondAttribute="bottom" constant="8" id="hXz-lg-KZX"/>
                             <constraint firstAttribute="trailing" secondItem="TTu-PD-tBK" secondAttribute="trailing" constant="8" id="hue-ZL-kox"/>
-                            <constraint firstAttribute="trailing" secondItem="yuY-E9-P8N" secondAttribute="trailing" id="mlg-nC-whn"/>
-                            <constraint firstItem="KlH-kH-wFr" firstAttribute="top" secondItem="FBc-FD-EkX" secondAttribute="bottom" constant="17" id="rUE-fM-qW8"/>
-                            <constraint firstItem="KlH-kH-wFr" firstAttribute="top" secondItem="FBc-FD-EkX" secondAttribute="bottom" constant="17" id="s1W-oj-zjm"/>
                         </constraints>
                     </view>
                     <connections>
@@ -282,17 +287,17 @@
         <!--Comedy-->
         <scene sceneID="dre-1c-XhW">
             <objects>
-                <tableViewController storyboardIdentifier="GenreTableViewController2" id="HWB-8A-F5X" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="GenreTableViewController2" id="HWB-8A-F5X" customClass="GenreTableViewController" customModule="My_Favorite_Movies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" id="rNr-a1-GC0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" rowHeight="71" id="AeO-SI-YxQ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieTableViewCell" rowHeight="71" id="AeO-SI-YxQ">
                                 <rect key="frame" x="0.0" y="28" width="414" height="71"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AeO-SI-YxQ" id="VZr-Tz-dE3">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -302,7 +307,7 @@
                             <outlet property="delegate" destination="HWB-8A-F5X" id="yOW-Rg-anS"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" tag="1" title="Comedy" image="Genre Icon" id="1A6-fl-SpL"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Comedy" image="Genre Icon" selectedImage="Genre Icon" id="1A6-fl-SpL"/>
                     <navigationItem key="navigationItem" title="Comedy" id="qka-Vd-lHr"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -313,17 +318,17 @@
         <!--Action-->
         <scene sceneID="Qo0-JW-EzQ">
             <objects>
-                <tableViewController storyboardIdentifier="GenreTableViewController1" id="eXy-IV-ng8" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="GenreTableViewController1" id="eXy-IV-ng8" customClass="GenreTableViewController" customModule="My_Favorite_Movies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" id="mcI-lQ-hZC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MovieTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieTableViewCell" rowHeight="71" id="G53-q8-m0I">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="MovieTableViewCell" selectionStyle="default" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MovieTableViewCell" rowHeight="71" id="G53-q8-m0I">
                                 <rect key="frame" x="0.0" y="28" width="414" height="71"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="G53-q8-m0I" id="LTe-hk-yNc">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -345,7 +350,7 @@
         <scene sceneID="6HS-Od-1gt">
             <objects>
                 <navigationController id="lS2-kD-A0A" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="2" title="Action" image="Genre Icon" id="luL-PM-vDC"/>
+                    <tabBarItem key="tabBarItem" tag="2" title="Action" image="Genre Icon" selectedImage="Genre Icon" id="luL-PM-vDC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="rbP-zo-BY6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -363,7 +368,7 @@
         <scene sceneID="Jpp-5C-hRq">
             <objects>
                 <navigationController id="pNb-aA-Bhq" userLabel="Favorites" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="3" title="Favorites" image="Favorite Icon" id="VYi-JB-IsC"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="Favorites" image="Heart Icon" selectedImage="Heart Icon" id="VYi-JB-IsC"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="sOY-mu-0QF">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -380,17 +385,17 @@
         <!--Favorites-->
         <scene sceneID="Iq4-wb-xmx">
             <objects>
-                <tableViewController storyboardIdentifier="FavoritesTableCell" id="Rge-Rm-9Jn" userLabel="Favorites" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="FavoritesTableCell" id="Rge-Rm-9Jn" userLabel="Favorites" customClass="FavoritesTableViewController" customModule="My_Favorite_Movies" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="71" sectionHeaderHeight="28" sectionFooterHeight="28" id="VFj-RX-P8G">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FavoritesTableViewCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="FavoriteTableViewCell" rowHeight="71" id="S5a-t5-0sw">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="FavoritesTableViewCell" selectionStyle="default" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="FavoriteTableViewCell" rowHeight="71" id="S5a-t5-0sw">
                                 <rect key="frame" x="0.0" y="28" width="414" height="71"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="S5a-t5-0sw" id="Ede-q2-yJs">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="70.666666666666671"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -400,7 +405,7 @@
                             <outlet property="delegate" destination="Rge-Rm-9Jn" id="xpG-Bz-iVS"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" tag="3" title="Favorites" image="Favorite Icon" id="K0o-xI-X33"/>
+                    <tabBarItem key="tabBarItem" tag="3" title="Favorites" image="Heart Icon" selectedImage="Heart Icon" id="K0o-xI-X33"/>
                     <navigationItem key="navigationItem" title="Favorites" id="VEE-ay-P4Y"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
@@ -411,7 +416,7 @@
     </scenes>
     <resources>
         <image name="Camera Icon" width="85" height="85"/>
-        <image name="Favorite Icon" width="42" height="42"/>
         <image name="Genre Icon" width="40" height="40"/>
+        <image name="Heart Icon" width="42" height="42"/>
     </resources>
 </document>
