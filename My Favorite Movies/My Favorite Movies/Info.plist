@@ -38,6 +38,29 @@
 	<dict>
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
+		<key>tmdb.org</key>
+		<dict>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+		</dict>
+		<key>themoviedb.org</key>
+		<dict>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+			<key>NSExceptionRequiresForwardSecrecy</key>
+			<false/>
+		</dict>
+		<key>cloudfront.net</key>
+		<dict>
+			<key>NSExceptionAllowsInsecureHTTPLoads</key>
+			<true/>
+			<key>NSIncludesSubdomains</key>
+			<true/>
+		</dict>
 	</dict>
 </dict>
 </plist>

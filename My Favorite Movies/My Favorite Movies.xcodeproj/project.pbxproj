@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2802C67B1E33F058000AF873 /* GCDBlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2802C67A1E33F058000AF873 /* GCDBlackBox.swift */; };
+		2802C67D1E33F0B0000AF873 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2802C67C1E33F0B0000AF873 /* Config.swift */; };
+		2802C67F1E34156F000AF873 /* GenreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2802C67E1E34156F000AF873 /* GenreTableViewController.swift */; };
 		2823BEBC1E329AC70011B5D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2823BEBB1E329AC70011B5D5 /* AppDelegate.swift */; };
 		2823BEBE1E329AC70011B5D5 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2823BEBD1E329AC70011B5D5 /* LoginVC.swift */; };
 		2823BEC11E329AC70011B5D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2823BEBF1E329AC70011B5D5 /* Main.storyboard */; };
@@ -14,9 +17,15 @@
 		2823BEC61E329AC70011B5D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2823BEC41E329AC70011B5D5 /* LaunchScreen.storyboard */; };
 		2823BED11E32D2920011B5D5 /* BorderedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2823BED01E32D2920011B5D5 /* BorderedButton.swift */; };
 		2823BED51E32D7E10011B5D5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2823BED41E32D7E10011B5D5 /* Constants.swift */; };
+		28EBBB881E358F0100CCAC05 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBBB871E358F0100CCAC05 /* Movie.swift */; };
+		28EBBB8E1E35981700CCAC05 /* FavoritesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBBB8D1E35981700CCAC05 /* FavoritesTableViewController.swift */; };
+		28EBBB901E35982300CCAC05 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EBBB8F1E35982300CCAC05 /* MovieDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2802C67A1E33F058000AF873 /* GCDBlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GCDBlackBox.swift; sourceTree = "<group>"; };
+		2802C67C1E33F0B0000AF873 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		2802C67E1E34156F000AF873 /* GenreTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenreTableViewController.swift; sourceTree = "<group>"; };
 		2823BEB81E329AC60011B5D5 /* My Favorite Movies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Favorite Movies.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2823BEBB1E329AC70011B5D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2823BEBD1E329AC70011B5D5 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -26,6 +35,9 @@
 		2823BEC71E329AC70011B5D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2823BED01E32D2920011B5D5 /* BorderedButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderedButton.swift; sourceTree = "<group>"; };
 		2823BED41E32D7E10011B5D5 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		28EBBB871E358F0100CCAC05 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		28EBBB8D1E35981700CCAC05 /* FavoritesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewController.swift; sourceTree = "<group>"; };
+		28EBBB8F1E35982300CCAC05 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +75,7 @@
 				2823BECD1E329D460011B5D5 /* Controller */,
 				2823BEBB1E329AC70011B5D5 /* AppDelegate.swift */,
 				2823BEBF1E329AC70011B5D5 /* Main.storyboard */,
-				2823BEC21E329AC70011B5D5 /* Assets.xcassets */,
+				2823BED81E3334680011B5D5 /* Resources */,
 				2823BEC41E329AC70011B5D5 /* LaunchScreen.storyboard */,
 				2823BEC71E329AC70011B5D5 /* Info.plist */,
 			);
@@ -74,6 +86,9 @@
 			isa = PBXGroup;
 			children = (
 				2823BEBD1E329AC70011B5D5 /* LoginVC.swift */,
+				2802C67E1E34156F000AF873 /* GenreTableViewController.swift */,
+				28EBBB8D1E35981700CCAC05 /* FavoritesTableViewController.swift */,
+				28EBBB8F1E35982300CCAC05 /* MovieDetailViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -90,8 +105,19 @@
 			isa = PBXGroup;
 			children = (
 				2823BED41E32D7E10011B5D5 /* Constants.swift */,
+				2802C67A1E33F058000AF873 /* GCDBlackBox.swift */,
+				28EBBB871E358F0100CCAC05 /* Movie.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		2823BED81E3334680011B5D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2823BEC21E329AC70011B5D5 /* Assets.xcassets */,
+				2802C67C1E33F0B0000AF873 /* Config.swift */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,8 +195,14 @@
 			files = (
 				2823BEBE1E329AC70011B5D5 /* LoginVC.swift in Sources */,
 				2823BEBC1E329AC70011B5D5 /* AppDelegate.swift in Sources */,
+				2802C67F1E34156F000AF873 /* GenreTableViewController.swift in Sources */,
+				28EBBB8E1E35981700CCAC05 /* FavoritesTableViewController.swift in Sources */,
 				2823BED11E32D2920011B5D5 /* BorderedButton.swift in Sources */,
 				2823BED51E32D7E10011B5D5 /* Constants.swift in Sources */,
+				2802C67B1E33F058000AF873 /* GCDBlackBox.swift in Sources */,
+				28EBBB901E35982300CCAC05 /* MovieDetailViewController.swift in Sources */,
+				28EBBB881E358F0100CCAC05 /* Movie.swift in Sources */,
+				2802C67D1E33F0B0000AF873 /* Config.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
